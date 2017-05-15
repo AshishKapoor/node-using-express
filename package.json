@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/AshishKapoor/node-using-express#readme",
   "dependencies": {
+    "ejs": "^2.5.6",
     "express": "^4.15.2",
+    "nodemon": "^1.11.0",
     "reload": "^1.1.5"
   }
 }
