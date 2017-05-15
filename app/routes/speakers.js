@@ -7,8 +7,10 @@ router.get('/speakers', function (req, res) { // root/speakers route
 
   dataFile.speakers.forEach(function(item) { // loop through the speakers
     info += (`
+      <link rel="stylesheet" type="text/css" href="/css/style.css">
       <li> 
         <h2>${item.name}</h2>
+        <img src="/images/speakers/${item.shortname}_tn.jpg" alt="${item.name}">
         <p>${item.summary}</p>
       </li> 
       `)
@@ -24,7 +26,9 @@ router.get('/speakers/:speakerid', function (req, res) { // root/speakers/<speak
   var speaker = dataFile.speakers[req.params.speakerid];
   
   res.send(`
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <h1>${speaker.title}</h1>
+    <img src="/images/speakers/${speaker.shortname}_tn.jpg" alt="${speaker.name}">
     <h2>with ${speaker.name}</h2>
     <p>${speaker.summary}</p>
   `)
