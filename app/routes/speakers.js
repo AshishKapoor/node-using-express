@@ -13,6 +13,7 @@ router.get('/speakers', function (req, res) { // root/speakers route
         <img src="/images/speakers/${item.shortname}_tn.jpg" alt="${item.name}">
         <p>${item.summary}</p>
       </li> 
+      <script src="/reload/reload.js"></script>
       `)
   })
   res.send(` 
@@ -31,6 +32,7 @@ router.get('/speakers/:speakerid', function (req, res) { // root/speakers/<speak
     <img src="/images/speakers/${speaker.shortname}_tn.jpg" alt="${speaker.name}">
     <h2>with ${speaker.name}</h2>
     <p>${speaker.summary}</p>
+    <script src="/reload/reload.js"></script>
   `)
 })
 
