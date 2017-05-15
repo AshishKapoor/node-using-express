@@ -20,8 +20,8 @@ router.get('/speakers', function (req, res) { // root/speakers route
 })
 
 router.get('/speakers/:speakerid', function (req, res) { // root/speakers/<speakerid> route
-  var speaker = dataFile.speakers[req.params.speakerid];
   var dataFile = req.app.get('appData')
+  var speaker = dataFile.speakers[req.params.speakerid];
   
   res.send(`
     <h1>${speaker.title}</h1>
