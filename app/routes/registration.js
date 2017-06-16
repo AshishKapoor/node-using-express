@@ -3,8 +3,8 @@ var router = express.Router();
 
 router.get('/registration', function (req, res) { 
   res.render('registration', {
-    pageID: 'home',
-    pageTitle: 'Home'
+    pageID: 'registration',
+    pageTitle: 'Registration'
   });
 })
 

@@ -23,6 +23,7 @@ app.use(require('./routes/tutorials'))
 app.use(require('./routes/registration'))
 app.use(require('./routes/faq'))
 app.use(require('./routes/directory'))
+app.use(require('./routes/feedback'))
 
 // Server config
 var server = app.listen(app.get('port'), function () { // 

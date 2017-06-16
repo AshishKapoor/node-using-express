@@ -4,8 +4,8 @@ var router = express.Router();
 router.get('/directory', function (req, res) { 
   
   res.render('directory', {
-    pageID: 'home',
-    pageTitle: 'Home'
+    pageID: 'directory',
+    pageTitle: 'Directory'
   });
 
 })
