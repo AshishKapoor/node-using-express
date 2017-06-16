@@ -11,7 +11,7 @@ app.set('appData', dataFile)
 app.set('view engine', 'ejs')
 app.set('views', 'app/views')
 
-app.locals.siteTitles = "Help Found"
+app.locals.siteTitle = "Help Found"
 
 // Proving access to public files.
 app.use(express.static('app/public'))

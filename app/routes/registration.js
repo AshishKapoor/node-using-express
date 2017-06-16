@@ -2,10 +2,10 @@ var express = require('express')
 var router = express.Router();
 
 router.get('/registration', function (req, res) { 
-  res.send(` 
-    <h1>Registration</h1>
-    ${info}
-  `)
+  res.render('registration', {
+    pageID: 'home',
+    pageTitle: 'Home'
+  });
 })
 
 module.exports = router
