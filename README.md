@@ -3,6 +3,6 @@ Learning node.js using express framework by creating a website with multiple fun
 
 ## Steps:
 change directory to the project and run
-$ npm install 
-Once done.
-$ npm start
+<p><b>$</b> npm install</p>
+<p>Once done.</p>
+<p><b>$</b> npm start</p>
